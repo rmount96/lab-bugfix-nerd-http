@@ -9,12 +9,12 @@ const app = (req, res) => {
     
     res.end(`
         <h1>${first} ${last}</h1>
+        <h2>${house}</h2>
         <ul>
             <li>${wand}</li>
         </ul>
     `);
     
     res.statusCode = 200;
-    res.write('<h2>${house}</h2>');
 }
 module.exports = app;
